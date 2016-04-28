@@ -109,5 +109,23 @@
 						.css('transition', 'none');
 
 	});
+ 
+    $('[data-toggle="popover"]').popover({
+        trigger: "hover",
+        placement: "top"
+    });
+    
+    $('#cse300 [data-toggle="popover"]').click(function () {
+        
+        $('#doc-modal-frame').attr('src', 'about:blank');
+        $('#doc-modal-title').text($(this).attr('data-original-title'));
+        $('#doc-modal-desc').text($(this).attr('data-content'));
+        $('#doc-modal-link').attr('href', $(this).attr('data-url'));
+        
+        $('#doc-modal-frame').attr('src', $(this).attr('data-url'));
+        $('#doc-modal').modal();
+    });
+    
+    
 
 })(jQuery);

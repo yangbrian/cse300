@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
 	Read Only by HTML5 UP
@@ -2523,7 +2523,7 @@
 		}
 
 			#header > nav ul li {
-				border-top: solid 2px #5ccfb0;
+/*				border-top: solid 2px #5ccfb0;*/
 				display: block;
 				padding: 0;
 			}
@@ -2574,7 +2574,7 @@
 
 	#one:before {
 		background-image: url("../../images/banner.jpg");
-		background-position: top right;
+		background-position: left;
 		background-repeat: no-repeat;
 		background-size: cover;
 		content: '';
@@ -3061,3 +3061,31 @@
 			}
 
 	}
+.popover {
+    font-family: 'Lato';
+    line-height: 1.8em;
+}
+
+.popover-title, .modal-header {
+    color: #fff;
+    background-color: #0099ff;
+}
+
+h4.modal-title {
+    color: #fff;
+}
+
+span.nonlink {
+    border-bottom: solid 1px #e4e4e4;
+}
+
+span.nonlink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0099ff;
+}
+
+.modal-dialog img {
+    max-width: 100%;
+    padding: 0 10px 10px 10px;
+}
